@@ -2,11 +2,13 @@
 <html>
     <head>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <title>
         </title>
         <style type="text/css">
         *{
             margin:0; padding: 0;
+            font-family: 'Poppins', sans-serif;
         }
         .body{
             margin: 0px;
@@ -62,6 +64,30 @@
             margin-top: 40px;
             font-weight: bold;
         }
+        .button-hvr{
+            margin-top:70px; 
+            margin-left:70px; 
+            width:300px; 
+            height:30px; 
+            background: darkblue; 
+            color: white; 
+            border: 0px;
+            border-radius: 3px;
+        }
+        .button-hvr:hover{
+            background-color: rgb(131, 130, 130)  
+        }
+        .footer{
+            background: rgb(78, 78, 78);
+            width: 100%;
+            height: 100px;
+            margin-top:100px;
+        }
+        .footer p{
+            color: #fff;
+            text-align: center;
+            line-height: 100px;            
+        }
         </style>
     </head>
     <body>
@@ -71,7 +97,7 @@
         <div class="header">
             <ul>
                 <li> <h2 style="margin-top:15px; margin-right: 100px;"><a href="Index.html">ShutterStock</a></h2> </li>
-                <i class="fa fa-search" style="background: white; color: black; padding: 4.5px;"></i><input style="padding: 5px; border:0px; position: relative; top: -1px;" type="text" placeholder="Belanja Sepatu disini">
+                <i class="fa fa-search" style="background: white; color: black; padding: 4.5px;"></i><input style="padding: 2.5px; border:0px; position: relative; top: -2px;" type="text" placeholder="Belanja Sepatu disini">
                 <li style="float:right; margin-top: 0px;"><a href="Daftar.html">Daftar</a></li>
                 <li style="float:right; margin-top: 0px;"><a href="Login.html">Login</a></li>
             </ul>
@@ -84,7 +110,11 @@
             <h2 style="color:darkblue;"> Rp 200.000 </h2>
             <p> Stok tersisa 3 lagi. </p>
             <button style="margin-left:70px; width: 20px;">-</button><input style="margin-left:5px; width: 70px;" type="text" value="1"> <button style="margin-left:0px; width: 20px;">+</button> <br/>
-            <button style="margin-top:70px; margin-left:70px; width:300px; height:30px; background: darkblue; color: white; border: 0px;"> Beli Sekarang </button>
+            <button class="button-hvr"> Beli Sekarang </button>
+        </div>
+
+        <div class="footer">
+            <p>Copyright 2018 By ShutterStock Indonesia</p>
         </div>
     </body>
 </html>

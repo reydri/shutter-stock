@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <title>
         </title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style type="text/css">
             * {
                 margin: 0; padding: 0;
+                font-family: 'Poppins', sans-serif;
             }
             body {
                 margin: 0px;
                 padding: 0px;
+            }
+            .title {
+                margin-bottom: 30px;
             }
             .field {
                 width: 100%;
@@ -21,15 +25,32 @@
                 font-weight: bold;
                 margin-bottom:20px;
             }
-            .a{
-                margin-right: 30px;
+            .h1{
+                font-size: 25px;
+                
+            }
+            .input1{
+                border:1px solid rgb(197, 197, 197);
+                padding: 5px;
+                border-radius: 2px;
+                margin-bottom: 40px;
+                width: 260px;
+                height: 22px;
+            }
+            .input{
+                border:1px solid rgb(197, 197, 197);
+                padding: 5px;
+                border-radius: 2px;
+                margin-top: 60px;
+                width: 260px;
+                height: 22px;
             }
             
             /* css untuk menu */
             .menu {
                 background-color: darkblue;
                 color: white;
-                margin-bottom: 150px;
+                margin-bottom: 80px;
             }
             .menu ul {
                 margin:0; padding: 0;
@@ -44,6 +65,30 @@
                 text-decoration: none;
                 color: white;
             }
+            .menu ul li a{
+            text-decoration: none;
+            color: white;
+            }
+            .footer{
+                background: rgb(78, 78, 78);
+                width: 100%;
+                height: 100px;
+                margin-top:300px;
+            }
+            .footer p{
+                color:#fff;
+                text-align: center;
+                line-height: 100px;
+            }
+            .button-hvr {
+                background-color:darkblue; padding: 10px; border: none;color: white;
+                margin-top: 60px;
+                width: 272px;
+                border: 0px;
+                border-radius: 3px;
+            }
+            .button-hvr:hover {
+                background-color: rgb(131, 130, 130)            }
         </style>
     </head>
     <body>
@@ -53,59 +98,28 @@
         <div class="menu">
             <ul>
                 <li> <h2><a href="Index.html">ShutterStock</a> </h2> </li>
+                <li style="float:right; margin-top: 5px;"><a href="Daftar.html">Daftar</a></li>
+                <li style="float:right; margin-top: 5px;"><a href="Login.html">Login</a></li>
             </ul>
         </div>
-        <i class="fab fa-facebook"></i>
         <div class="field">
-            <a>Login ShutterStock</a>
+            <h1 class="title">Login ShutterStock</h1>
             <p class="control has-icons-left has-icons-right">
-                <label class="label">Username:</label>
-                <input style="width:200px; height:25px; border:1px solid black;" class="input" type="text" placeholder="Username">
-                <span class="icon is-small is-left">
-                    <i class="fas fa-envelope"></i>
-                </span>
-                <span class="icon is-small is-right">
-                    <i class="fas fa-check"></i>
-                </span>
+                <input class="input1" type="text" placeholder="Username">
             </p>
         </div>
         <div class="field">
             <p class="control has-icons-left">
-                <label class="label">Password:</label>
-                <input style="width:200px; height:25px; border:1px solid black;" class="input" type="password" placeholder="Password">
-                <span class="icon is-small is-left">
-                    <i class="fas fa-lock"></i>
-                </span>
+                <input class="input" type="password" placeholder="Password">
             </p>
         </div>
         <div class="field">
-            <p class="control">
-                <label style="margin-right:30px;" class="checkbox">
-                    <input type="checkbox">
-                    Saya Ingat
-                </label>
-                <a href="#">Lupa Password?</a>
-            </p>
-        </div>
-        <div class="field">
-            <p class="control">
-                <button style="background-color:#f1c40f; padding: 10px; border: none;color: white; margin-right: 20px; margin-top: -50px;" class="button is-success">
-                    Login
-                </button>
-            </p>
-        <div class="field">
-            <p class="control">
-                <button style="background-color:blue; padding: 10px; border: none;color: white; margin-right: 20px; margin-top: 15px;" class="button is-success">
-                    <i class="fa fa-facebook fa-lg" style="margin-right:7px;"></i> Login dengan Facebook
-                </button>
-            </p>
-        </div>
-        <div class="field">
-            <p class="control">
-                <button style="background-color:red; padding: 10px; border: none;color: white; margin-right: 20px; margin-top: 10px;" class="button is-success">
-                    <i class="fa fa-google" style="margin-right:7px;"></i>Login dengan Google
-                </button>
-            </p>
+            <button class="button-hvr">
+                Login
+            </button>
+
+        <div class="footer">
+            <p style="font-weight: normal;">Copyright 2018 By ShutterStock Indonesia</p>
         </div>
     </body>
 </html>

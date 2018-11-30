@@ -2,11 +2,13 @@
 <html>
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
         <title>
         </title>
         <style type="text/css">
         *{
             margin:0; padding: 0;
+            font-family: 'Poppins', sans-serif;
         }
         .body{
             margin: 0px;
@@ -51,16 +53,94 @@
             margin-left: 20px;
 
         }
+        .select{
+            background: darkblue;
+            font-size: 30px; 
+            color: #fff; 
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .select1{
+            background: darkblue;
+            font-size: 30px; 
+            color: #fff; 
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .menu1{
+            width:200px;
+            height: 100px;
+            margin-left:60px;
+        }
+        .menu1 a{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .menu1 b{
+            color: darkblue;
+            margin-left:5px;    
+        }
+        .menu2{
+            float: right;
+            margin-right: 900px;
+            margin-top: -100px;
+        }
+        .menu2 a{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .menu2 b{
+            color: darkblue;
+            margin-left:5px;
+        }
+        .menu3{
+            float: right;
+            margin-right:615px;
+            margin-top:-100px;
+        }
+        .menu3 a{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .menu3 b{
+            color: darkblue;
+            margin-left: 5px;
+        }
+        .menu4{
+            float: right;
+            margin-right: 330px;
+            margin-top: -100px;
+        }
+        .menu4 a{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .menu4 b{
+            color: darkblue;
+            margin-left: 5px;
+        }
+        .menu5{
+            float: right;
+            margin-right: 80px;
+            margin-top: -100px;
+        }
+        .menu5 a{
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .menu5 b{
+            color: darkblue;
+            margin-left: 5px;
+        }
         .img1{
             width: 50%;
-            margin-right: 4px;
-            margin-left: 4px;
-
+            margin-left:9px;
+            margin-bottom: 40px;
         }
         .img2{
             width: 49%;
-            margin-right: 6px;
-            margin-left: -5px;  
+            margin-left: -5px;
+            margin-bottom: 40px;
         }
         .img3{           
             width: 20%;
@@ -91,12 +171,22 @@
             width: 20%;
         }
         .img12{
-            width: 20%
+            width: 20%;
         }
         .img13{
-            width: 18%
+            width: 18%;
         }
-        
+        .footer{
+            background: rgb(78, 78, 78);
+            width: 100%;
+            height: 100px;
+            margin-top:100px
+        }
+        .footer p{
+            color:#fff;
+            text-align: center;
+            line-height: 100px;
+        }
         </style>
     </head>
     <body>
@@ -106,7 +196,7 @@
         <div class="header">
             <ul>
                 <li> <h2 style="margin-top:15px; margin-right: 100px;"><a href="Index.html">ShutterStock</a></h2> </li>
-                <i class="fa fa-search" style="background: white; color: black; padding: 4.5px;"></i><input style="padding: 5px; border:0px; position: relative; top: -1px;" type="text" placeholder="Belanja Sepatu disini">
+                <i class="fa fa-search" style="background: white; color: black; padding: 4.5px;"></i><input style="padding: 2.5px; border:0px; position: relative; top: -2px;" type="text" placeholder="Belanja Sepatu disini">
                 <li style="float:right; margin-top: 0px;"><a href="Daftar.html">Daftar</a></li>
                 <li style="float:right; margin-top: 0px;"><a href="Login.html">Login</a></li>
             </ul>
@@ -114,7 +204,7 @@
 
         <div class="menu">
             <ul>
-                <li>Kategori</li>
+                <li href="select">Kategori</li>
                 <li>Promo</li>
                 <li>Jualan Sepatu</li>
                 <li style="float:right;">Tentang Kami</li>
@@ -124,48 +214,51 @@
         </div>
 
         <img class="img5" src="1.jpg">
-        <img  style="margin-bottom: 40px;" class="img1" src="sneakers-shoes-horizontal-seamless-pattern-450w-296346296.jpg">
-        <img  style="margin-bottom: 40px;" class="img2" src="sneakers-shoes-horizontal-seamless-pattern-450w-296346296.jpg">
+        <img class="img1" src="sneakers-shoes-horizontal-seamless-pattern-450w-296346296.jpg">
+        <img class="img2" src="sneakers-shoes-horizontal-seamless-pattern-450w-296346296.jpg">
 
-        <div style="font-size: 30px; color: darkblue; margin-bottom: 20px;" class="select">
+        <!-- <div class="select">
             Kategori
-        </div>
+        </div> -->
+        <h3 style="font-size: 28px; padding: 10px; margin-left: 20px;"> Kategori & Promo </h3>
         <img class="img9" src="Adidas.jpg">
         <img class="img10" src="Nikee.jpg">
         <img class="img11" src="Puma.jpg">
         <img class="img12" src="rebok.jpg">
         <img class="img13" src="Vans.jpg">
-
-        <div style="text-align: center; width: 20%; margin-bottom: 40px;" class="menu0"> 
-            <span><h2>Adidas</h2></span>
-            <span style="float:right; margin-right:-150px; margin-top: -25px;"><h2>Nike</h2></span>
-            <span style="float:right; margin-right:-440px; margin-top: -25px;"><h2>Puma</h2></span>
-            <span style="float:right; margin-right:-720px; margin-top: -25px;"><h2>Reebok</h2></span>
-            <span style="float:right; margin-right:-960px; margin-top: -25px;"><h2>Vans</h2></span>
-        </div>
-            
-        <div class="field">
-            <span><a style="font-size: 30px; color: darkblue; margin-bottom: 20px;">Promo sepatu hari ini</a></span>
-        </div>        
+    
+        <!-- <div class="select1">
+            Promo
+        </div>         -->
         <img class="img3" src="nike.jpg">
         <img class="img4" src="nike2.jpg">
         <img class="img6" src="adidas1.jpg">
         <img class="img7" src="adidas2.jpg">
         <img class="img8" src="vans1.jpg">
 
-        <div style="text-align:center; width: 20%;" class="menu1">
-            <a href="DetailBarang1.html">Jordan Eclipse Chukka</a>
-            <a style="float:right; margin-right:-250px;">Nike Mercurial Victory VI SG</a>
-            <a style="float:right; margin-right:-470px;">Sneakers Adidas</a>
-            <a style="float:right; margin-right:-770px;">Adidas Stan Smith</a>
-            <a style="float:right; margin-right:-990px;">Vans SK8</a>
-        </div>        
-        <p style="text-align:center; width: 20%;" class="button is-link">
-            <b style="color:darkblue;" href="#">Rp 200.000</b>
-            <b style="float:right; margin-right:-190px; color:darkblue;" href="#">Rp 150.000</b>
-            <b style="float:right; margin-right:-450px; color:darkblue;" href="#">Rp 180.000</b>
-            <b style="float:right; margin-right:-750px; color:darkblue;" href="#">Rp 160.000</b>
-            <b style="float:right; margin-right:-1000px; color:darkblue;" href="#">Rp 190.000</b>
-        </p>
+        <div class="menu1">
+            <a href="DetailBarang1.html">Jordan Eclipse Chukka</a><br>
+            <b href="#">Rp 200.000</b>
+        </div> 
+        <div class="menu2">
+            <a>Nike Mercurial</a><br>
+            <b href="#">Rp 150.000</b>
+        </div>
+        <div class="menu3">
+            <a>Sneakers Adidas</a><br>
+            <b href="#">Rp 180.000</b>
+        </div>
+        <div class="menu4">
+            <a>Adidas Stan Smith</a><br>
+            <b href="#">Rp 160.000</b>
+        </div>
+        <div class="menu5">
+            <a>Vans SK8</a><br>
+            <b href="#">Rp 190.000</b>
+        </div>
+        
+        <div class="footer">
+            <p>Copyright 2018 By ShutterStock Indonesia</p>
+        </div>
     </body>
 </html>
