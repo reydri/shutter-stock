@@ -1,0 +1,66 @@
+* {
+    margin: 0; padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+/* css untuk menu */
+.menu{
+    background-color: darkblue;
+    color: white;
+    margin-bottom: 80px;
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+}
+.menu ul li{
+    display: inline-block;
+    list-style: none;
+    margin-left: 20px;
+    padding: 10px;
+}
+.menu ul li h2 a{
+    color: white;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.field{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.title {
+    font-size: 25px;
+}
+.input {
+    border: 1px solid rgb(197, 197, 197);
+    padding: 5px;
+    border-radius: 2px;
+}
+.footer {
+    background: rgb(78, 78, 78);
+    width: 100%;
+    height: 100px;;
+    margin-top: 130px;
+}
+.footer p {
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+}
+.btn-hover {
+    background-color:darkblue; width: 270px; padding: 10px; border: none;color: white; border-radius: 3px; margin-top: 30px;
+}
+.btn-hover:hover {
+    background: rgb(131, 130, 130);
+    color: white;
+}

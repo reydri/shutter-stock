@@ -1,0 +1,84 @@
+* {
+    margin: 0; padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.title {
+    margin-bottom: 30px;
+}
+.field {
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    font-weight: bold;
+    margin-bottom:20px;
+}
+.h1{
+    font-size: 25px;
+    
+}
+.input1{
+    border:1px solid rgb(197, 197, 197);
+    padding: 5px;
+    border-radius: 2px;
+    margin-bottom: 40px;
+    width: 260px;
+    height: 22px;
+}
+.input{
+    border:1px solid rgb(197, 197, 197);
+    padding: 5px;
+    border-radius: 2px;
+    margin-top: 60px;
+    width: 260px;
+    height: 22px;
+}
+
+/* css untuk menu */
+.menu {
+    background-color: darkblue;
+    color: white;
+    margin-bottom: 80px;
+}
+.menu ul {
+    margin:0; padding: 0;
+}
+.menu ul li {
+    display: inline-block;
+    list-style: none;
+    padding: 10px;
+    margin-left: 20px;
+}
+.menu ul li h2 a{
+    text-decoration: none;
+    color: white;
+}
+.menu ul li a{
+text-decoration: none;
+color: white;
+}
+.footer{
+    background: rgb(78, 78, 78);
+    width: 100%;
+    height: 100px;
+    margin-top:300px;
+}
+.footer p{
+    color:#fff;
+    text-align: center;
+    line-height: 100px;
+}
+.button-hvr {
+    background-color:darkblue; padding: 10px; border: none;color: white;
+    margin-top: 60px;
+    width: 272px;
+    border: 0px;
+    border-radius: 3px;
+}
+.button-hvr:hover {
+    background-color: rgb(131, 130, 130)            }
