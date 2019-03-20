@@ -15,23 +15,35 @@
             <ul>
                 <li> <h2 style="margin-top:15px; margin-right: 100px;"><a href="Index.html">ShutterStock</a></h2> </li>
                 <i class="fa fa-search" style="background: white; color: black; padding: 4.5px;"></i><input style="padding: 2.5px; border:0px; position: relative; top: -2px;" type="text" placeholder="Belanja Sepatu disini">
-                <li style="float:right; margin-top: 0px;"><a href="Daftar.html">Daftar</a></li>
-                <li style="float:right; margin-top: 0px;"><a href="Login.html">Login</a></li>
             </ul>
         </div>
         <img class="img1" src="nike.jpg">
         <div style="text-align:center; width: 40%; font-size: 20px; margin-bottom: 20px;" class="menu1">
         </div>
-        <div class="detail-barang">
+        <div class="detail-barang" id="app">
             <h1> Jordan Eclipse Chukka </h1>
             <h2 style="color:darkblue;"> Rp 200.000 </h2>
             <p> Stok tersisa 3 lagi. </p>
-            <button style="margin-left:70px; width: 20px;">-</button><input style="margin-left:5px; width: 70px;" type="text" value="1"> <button style="margin-left:0px; width: 20px;">+</button> <br/>
-            <button class="button-hvr"> Beli Sekarang </button>
+            <button style="margin-left:70px; width: 20px;">-</button><input style="margin-left:5px; width: 70px;" type="text" v-model="stok" placeholder="1"> <button style="margin-left:0px; width: 20px;">+</button> <br/>
+            <button class="button-hvr" @click="buy"> Beli Sekarang </button>
         </div>
-
-        <div class="footer">
-            <p>Copyright 2018 By ShutterStock Indonesia</p>
-        </div>
+        <script>
+            new Vue({
+                el: "#app",
+                data: {
+                    stok: '',
+                },
+                methods: {
+                    buy() {
+                        if(this.stok === "1" || this.stok === "2" || this.stok === "3") {
+                            alert('Selamat anda telah berhasil membeli sepatu ini !!!!');
+                            window.location.href = "Index.html";
+                        }else{
+                            alert('Maaf stok yang anda pesan melebihi batas');
+                        }
+                    }
+                }
+            })
+        </script>
     </body>
 </html>

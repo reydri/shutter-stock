@@ -45,6 +45,10 @@
     margin-left: 20px;
 
 }
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+}
 .select{
     background: darkblue;
     font-size: 30px; 

@@ -9,57 +9,52 @@
     <body>
        <div id="app">
             <div class="menu">
-                    <ul>
-                        <li> <h2><a href="Index.html">ShutterStock</a> </h2> </li>
-                        <li style="float:right; margin-top: 5px;"><a href="Daftar.html">Daftar</a></li>
-                        <li style="float:right; margin-top: 5px;"><a href="Login.html">Login</a></li>
-                    </ul>
-                </div>
+                <ul>
+                    <li> <h2><a href="Index.html">ShutterStock</a> </h2> </li>
+                </ul>
+            </div>
                        
-                <div class="field">
-                    <h3 class="title">Buat Akun Baru</h3>
-                </div>
+            <div class="field">
+                <h3 class="title">Buat Akun Baru</h3>
+            </div>
                 
-                <div class="field">
-                        <div class="control has-icons-left has-icons-right">
-                            <input style="width: 260px; height:25px; margin-top: 15px;" class="input is-success" type="text" name="firstname" placeholder="Firstname" v-model="firstname">
-                        </div>
+            <div class="field">
+                <div class="control has-icons-left has-icons-right">
+                    <input style="width: 260px; height:25px; margin-top: 15px;" class="input is-success" type="text" name="firstname" placeholder="Firstname" v-model="firstname">
                 </div>
+            </div>
                 
-                <div class="field">
-                            <div class="control has-icons-left has-icons-right">
-                                <input style="width: 260px; height:25px; margin-top: 15px;" class="input is-success" type="text" placeholder="Lastame" v-model="lastname">
-                            </div>
+            <div class="field">
+                <div class="control has-icons-left has-icons-right">
+                    <input style="width: 260px; height:25px; margin-top: 15px;" class="input is-success" type="text" placeholder="Lastname" v-model="lastname">
                 </div>
+            </div>
         
-                <div class="field">
-                    <div class="control has-icons-left has-icons-right">
-                        <input style="width: 260px; height:25px; margin-top: 15px;" class="input is-success" type="text" placeholder="Username" v-model="username">
-                    </div>
+            <div class="field">
+                <div class="control has-icons-left has-icons-right">
+                    <input style="width: 260px; height:25px; margin-top: 15px;" class="input is-success" type="text" placeholder="Username" v-model="username">
                 </div>
+            </div>
         
-                <div class="field">
-                        <div class="control has-icons-left">
-                            <input style="width: 260px; height:25px;margin-top: 15px;" class="input" type="password" placeholder="Password" v-model="password">
-                        </div>
-                    </div>
-              
-                <div class="field">
-                    <div class="control has-icons-left has-icons-right">
-                        <input style="width: 260px; height:25px; margin-top: 15px;" class="input is-danger" type="email" placeholder="Email" v-model="email">
-                    </div>
+            <div class="field">
+                <div class="control has-icons-left">
+                    <input style="width: 260px; height:25px;margin-top: 15px;" class="input" type="password" placeholder="Password" v-model="password">
                 </div>
+            </div>
               
-                <div class="field is-grouped">
-                    <div class="control">
-                        <button class="btn-hover" @click="register">
-                            Daftar        
-                        </button>
-                    </div>
-                </div> 
-                <div class="footer">
-                    <p> Copyright 2018 By ShutterStock Indonesia </p>
+            <div class="field">
+                <div class="control has-icons-left has-icons-right">
+                    <input style="width: 260px; height:25px; margin-top: 15px;" class="input is-danger" type="email" placeholder="Email" v-model="email">
                 </div>
+            </div>
+              
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="btn-hover" @click="register">
+                        Daftar        
+                    </button>
+                </div>
+            </div> 
        </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
         <script>
@@ -67,16 +62,16 @@
                 el: "#app",
                 data: {
                     firstname: '',
-                    lastame: '',
+                    lastname: '',
                     username: '',
                     password: '',
-                    email: ''
+                    email: '',
                 },
                 methods: {
                     register() {
-                        if(this.firstname === '' && this.lastame === '' && this.username === '' && this.password === '' && this.email === '') {
+                        if(this.firstname === "" && this.lastname === "" && this.username === "" && this.password === "" && this.email === "") {
                             alert('Data masih ada yang kosong, isi lagi!');
-                        } else {
+                        }else{
                             alert('Berhasil Daftar...');
                             window.location.href = "Index.html";
                         }

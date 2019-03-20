@@ -9,40 +9,35 @@
     <body>
        <div id="app">
             <div class="menu">
-                    <ul>
-                        <li> <h2><a href="Index.html">ShutterStock</a> </h2> </li>
-                        <li style="float:right; margin-top: 5px;"><a href="Daftar.html">Daftar</a></li>
-                        <li style="float:right; margin-top: 5px;"><a href="Login.html">Login</a></li>
-                    </ul>
-                </div>
+                <ul>
+                    <li> <h2><a href="Index.html">ShutterStock</a> </h2> </li>
+                </ul>
+            </div>
                        
-                <div class="field">
-                    <h3 class="title">Login </h3>
-                </div>
+            <div class="field">
+                <h3 class="title">Login </h3>
+            </div>
         
-                <div class="field">
-                    <div class="control has-icons-left has-icons-right">
-                        <input style="width: 260px; height:25px; margin-top: 15px;" class="input is-success" type="text" placeholder="Username" v-model="username">
-                    </div>
+            <div class="field">
+                <div class="control has-icons-left has-icons-right">
+                    <input style="width: 260px; height:25px; margin-top: 15px;" class="input is-success" type="text" placeholder="Username" v-model="username">
                 </div>
+            </div>
         
-                <div class="field">
-                        <div class="control has-icons-left">
-                            <input style="width: 260px; height:25px;margin-top: 15px;" class="input" type="password" placeholder="Password" v-model="password">
-                        </div>
-                    </div>
+            <div class="field">
+                <div class="control has-icons-left">
+                    <input style="width: 260px; height:25px;margin-top: 15px;" class="input" type="password" placeholder="Password" v-model="password">
+                </div>
+            </div>
               
               
-                <div class="field is-grouped">
-                    <div class="control">
-                        <button class="btn-hover" @click="login">
-                            Login        
-                        </button>
-                    </div>
-                </div> 
-                <div class="footer" style="margin-top: 230px;">
-                    <p> Copyright 2018 By ShutterStock Indonesia </p>
+            <div class="field is-grouped">
+                <div class="control">
+                    <button class="btn-hover" @click="login">
+                        Login        
+                    </button>
                 </div>
+            </div>         
        </div>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
         <script>
